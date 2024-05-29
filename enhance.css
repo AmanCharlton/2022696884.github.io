@@ -1,0 +1,11 @@
+thead{background: lightblue;}
+
+th.first{background: skyblue; color: black;}
+
+th.second{background: deepskyblue; color: black;}
+
+tfoot{background: slateblue;}
+
+table { width : 700px ; border : 5px solid Black ; text-align: center;}
+
+td,th { border : 1px solid Black ; }

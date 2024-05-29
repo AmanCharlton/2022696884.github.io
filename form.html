@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="IML254: Personal Website Design.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="shortcut icon" href="Resources/logo.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top">WELCOME TO MY PERSONAL WEBSITE</h1>
+            <p style="text-align: center;">FEEDBACK COMMENT</p>
+        </header>
+
+        <section>
+            <iframe src="guidelines.pdf" style="width: 100%; height: 800px;" frameborder="0"></iframe>
+        </section>
+
+        <section>
+            <center>
+                <h2>Feedback Form</h2>
+            </center>
+            <form action="mailto:2022696884@student.uitm.edu.my" method="post" enctype="text/plain">
+                <dl>
+                    <dt>Name: <br>
+                        <input type="text" name="Full Name" value="" required>
+                    </dt><br>
+    
+                    <dt>Status: <br>
+                        <input type="radio" name="status" value="Single" checked>Single <br>
+                        <input type="radio" name="status" value="In Relationship">In Relationship <br>
+                        <input type="radio" name="status" value="Marriage">Marriage <br>
+                        <input type="radio" name="status" value="Divorce">Divorce <br>
+                        <input type="radio" name="status" value="Dead">Dead
+                    </dt><br>
+        
+                    <dt>Age: <br>
+                        <input type="radio" name="age" value="20-29" checked>20-29 <br>
+                        <input type="radio" name="age" value="30-39">30-39 <br>
+                        <input type="radio" name="age" value="40-49">40-49 <br>
+                        <input type="radio" name="age" value="50-59">50-59 <br>
+                        <input type="radio" name="age" value="60-69">60-69 <br>
+                        <input type="radio" name="age" value="70-79">70-79
+                    </dt><br>
+    
+                    <dt>Gender: <br>
+                        <input type="radio" name="Gender" value="Male" checked>Male <br>
+                        <input type="radio" name="Gender" value="Female">Female <br>
+                        <input type="radio" name="Gender" value="Others">Others
+                    </dt><br>
+    
+                    <dt>Hobby: <br>
+                        <input type="checkbox" name="Hobby" value="Reciting Al-Quran">Reciting Al-Quran <br>
+                        <input type="checkbox" name="Hobby" value="Praying">Praying <br>
+                        <input type="checkbox" name="Hobby" value="Dhikr">Dhikr <br>
+                        <input type="checkbox" name="Hobby" value="Napping">Napping <br>
+                        <input type="checkbox" name="Hobby" value="Working">Working <br>
+                        <input type="checkbox" name="Hobby" value="Travelling">Travelling <br>
+                        <input type="checkbox" name="Hobby" value="Sporting">Sporting <br>
+                        <input type="checkbox" name="Hobby" value="Coding">Coding <br>
+                        <input type="checkbox" name="Hobby" value="Gaming">Gaming <br>
+                        <input type="checkbox" name="Hobby" value="Listening to music">Listening to music <br>
+                        <input type="checkbox" name="Hobby" value="Watching video/drama/movie">Watching video/drama/movie <br>
+                    </dt><br>
+    
+                    <dt>Do you satisfied with my website? <br>
+                        <input type="radio" name="opinion" value="Yes" checked>Yes <br>
+                        <input type="radio" name="opinion" value="No">No <br>
+                        <input type="radio" name="opinion" value="Maybe">Maybe
+                    </dt><br>
+
+                    <dt>Give comment about my website: <br>
+                        <textarea name="Comment" value="" cols="50" rows="4" required></textarea>
+                    </dt><br>
+
+                    <dt>Time/date <br>
+                        <input type="datetime-local" name="calendar" value="" required>
+                    </dt><br>
+    
+                    <dt>Submit: <br>
+                        <input type="submit" value="Send" onclick="message1()">
+                        <input type="reset" value="Reset" onclick="message2()">
+                    </dt><br>    
+                </dl>
+            </form>
+        </section>
+
+        <section>
+            <center>
+                <h2><a href="rubric.pdf" style="text-decoration: none; color: blueviolet;" title="Click Here to Access the PDF Rubric" target="bottom">Rubric Score Form</a></h2>
+            </center>
+
+            <form action="mailto:2022696884@student.uitm.edu.my" method="post" enctype="text/plain">
+
+                <dl>
+                    <dt class="text">Text Formatting: <br>
+                        Title (Heading/Page Title): <input type="range" name="Title (Heading/Page Title)" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Bold/Italic/Underline/Color: <input type="range" name="Bold/Italic/Underline/Color" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2
+                    </dt> <br>
+
+                    <dt class="image">Images: <br>
+                        Variety of Images: <input type="range" name="Variety of Images" min="1.00" max="6.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>3.00</output>/6 <br>
+                        Wrapping with Text: <input type="range" name="Wrapping with Text" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Using images for linking/thumbnail: <input type="range" name="Using images for linking/thumbnail" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2
+                    </dt> <br>
+
+                    <dt class="link">Link: <br>
+                        Creating Link: <input type="range" name="Creating Link" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Anchor: <input type="range" name="Anchor" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        External Link: <input type="range" name="External Link" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Changing Color of Link: <input type="range" name="Changing Color of Link" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2
+                    </dt> <br>
+
+                    <dt class="table">Tables: <br>
+                        Create Table: <input type="range" name="Create Table" min="1.00" max="5.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>2.50</output>/5 <br>
+                        Complexity of Table: <input type="range" name="Complexity of Table" min="1.00" max="10.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>5.00</output>/10 <br>
+                    </dt> <br>
+
+                    <dt class="multimedia">Multimedia Elements: <br>
+                        Sound: <input type="range" name="Sound" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Animation: <input type="range" name="Animation" min="1.00" max="4.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>2.00</output>/4 <br>
+                        Video: <input type="range" name="Video" min="1.00" max="10.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>5.00</output>/10
+                    </dt> <br>
+
+                    <dt class="hosting">Web Hosting: <br>
+                        Upload into any free web hosting: <br>
+                        Free from any syntax error: <br>
+                        <input type="range" name="Web Hosting" min="1.00" max="10.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>5.00</output>/10 <br>
+                    </dt> <br>
+
+                    <dt class="consistent">Consistency & Interactivity: <br>
+                        Button (text/image): <input type="range" name="Button (text/image)" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Background/layout: <input type="range" name="Background/layout" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Text consistency: <input type="range" name="Text consistency" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2 <br>
+                        Color consistency: <input type="range" name="Color consistency" min="1.00" max="2.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>1.50</output>/2
+                    </dt> <br>
+
+                    <dt class="original">Originality: <br>
+                        Design/layout: <input type="range" name="Design/layout" min="1.00" max="10.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>5.00</output>/10 <br>
+                        Artwork/Video: <input type="range" name="Artwork/Video" min="1.00" max="5.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>2.50</output>/5 <br>
+                    </dt> <br>
+
+                    <dt class="others">CSS, JavaScript & other extra effort: <br>
+                        Use external CSS for text, heading etc: <input type="range" name="Use external CSS for text, heading etc" min="1.00" max="10.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>5.00</output>/10 <br>
+                        Usage of JavaScript & other extra effort: <input type="range" name="Usage of JavaScript and other extra effort" min="1.00" max="4.00" step="0.01" oninput="this.nextElementSibling.value = this.value">
+                        <output>2.00</output>/4 <br>
+                    </dt> <br>
+
+                    <dt>Total Score:
+                        <input type="number" name="Total Score /100" id="">/100
+                    </dt> <br>
+
+                    <dt>Carry Mark:
+                        <input type="number" name="Carry Mark /30" id="" step="0.01">/30
+                    </dt> <br>
+
+                    <dt>Submit: <br>
+                        <input type="submit" value="Send" onclick="message3()">
+                        <input type="reset" value="Reset" onclick="message2()">
+                    </dt><br>    
+
+                </dl>
+            </form>
+        </section>
+
+        <div id="fix" class="fixed">
+            <a href="#top" style="text-decoration: none;">Return to Top</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 AmanCharlton All Rights Reserved.
+                <small>Last Modified:</small>
+                <small id="lastupdate"></small>    
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+        <noscript>JavaScript is Not Enabled</noscript>
+
+    </body>
+</html>
