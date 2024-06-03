@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="IML254: Personal Website Design.">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="shortcut icon" href="Resources/logo.ico" type="image/x-icon">
+        <style>
+            td{border: none}
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="top">WELCOME TO MY PERSONAL WEBSITE</h1>
+            <p style="text-align: center;">MOMENTS OF LIFE GALLERY</p>
+        </header>
+
+        <section>
+            <h2><center><b>PERSONAL PICTURE</b></center></h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="Gallery/solo1.jpg" alt="solo1.jpg"></div>
+                    <div class="slide"><img src="Gallery/solo2.jpg" alt="solo2.jpg"></div>
+                    <div class="slide"><img src="Gallery/solo3.jpg" alt="solo3.jpg"></div>
+                    <div class="slide"><img src="Gallery/solo4.jpg" alt="solo4.jpg"></div>
+                    <div class="slide"><img src="Gallery/solo5.jpg" alt="solo5.jpg"></div>
+                    <div class="slide"><img src="Gallery/duo_photo1.jpg" alt="duo_photo1.jpg"></div>
+                    <div class="slide"><img src="Gallery/duo_photo2.jpg" alt="duo_photo2.jpg"></div>
+                    <div class="slide"><img src="Gallery/duo_photo3.jpg" alt="duo_photo3.jpg"></div>
+                    <div class="slide"><img src="Gallery/duo_photo4.jpg" alt="duo_photo4.jpg"></div>
+                    <div class="slide"><img src="Gallery/duo_photo5.jpg" alt="duo_photo5.jpg"></div>
+                    <div class="slide"><img src="Gallery/family_trip1.jpg" alt="family_trip1.jpg"></div>
+                    <div class="slide"><img src="Gallery/family_trip2.jpg" alt="family_trip2.jpg"></div>
+                    <div class="slide"><img src="Gallery/family_trip3.jpg" alt="family_trip3.jpg"></div>
+                    <div class="slide"><img src="Gallery/group1.jpg" alt="group1.jpg"></div>
+                    <div class="slide"><img src="Gallery/group2.jpg" alt="group2.jpg"></div>
+                </div>
+                <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlides(1)">&#10095;</button>
+            </div>        
+        </section>
+
+        <section>
+            <h2><center><b>MY CAT</b></center></h2>
+            <table>
+                <tr>
+                    <td colspan="2"><img src="Gallery/cat1.jpg" alt="" height="450" width="450"></td>
+                    <td></td>
+                    <td><img src="Gallery/cat2.jpg" alt="" height="450" width="450"></td>
+                    <td></td>
+                    <td><img src="Gallery/cat3.jpg" alt="" height="450" width="450"></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img src="Gallery/cat4.jpg" alt="" height="450" width="450"></td>
+                    <td></td>
+                    <td><img src="Gallery/cat5.jpg" alt="" height="450" width="450"></td>
+                    <td></td>
+                    <td><img src="Gallery/cat6.jpg" alt="" height="450" width="450"></td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <div id="fix" class="fixed">
+            <a href="#top" style="text-decoration: none;">Return to Top</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 AmanCharlton All Rights Reserved.
+                <small>Last Modified:</small>
+                <small id="lastupdate"></small>    
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+        <noscript>JavaScript is Not Enabled</noscript>
+
+    </body>
+</html>
